@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <title>TuneSync - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home rounded bg-grey m-1 p-1">
+          <div class="logo">
+            <img class="invert" src="assets/logo.svg" alt="logo" />
+          </div>
+          <ul>
+            <li><img class="invert" src="assets/home.svg" alt="home" />Home</li>
+            <li>
+              <img class="invert" src="assets/search.svg" alt="search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="assets/playlist.svg" alt="library" />
+            <p>Your Library</p>
+            <img class="invert add-logo" src="assets/add.svg" alt="" />
+          </div>
+
+          <div class="songList">
+            <ul></ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right rounded bg-grey">
+        <div class="header">
+          <div class="nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                stroke="#ffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="#ffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="buttons">
+            <button class="signupBtn">Sign Up</button>
+            <button class="loginBtn">Log in</button>
+          </div>
+        </div>
+        <div class="tunesyncPlaylists">
+          <h1>TuneSync Playlists</h1>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="play">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="#0000000"
+                >
+                  <path
+                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de"
+                alt=""
+              />
+              <h3>Dinner with Friends</h3>
+              <p>The perfect soundtrack to those long nights over dinner</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de"
+                alt=""
+              />
+              <h3>Dinner with Friends</h3>
+              <p>The perfect soundtrack to those long nights over dinner</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+
+            <div class="songBar">
+              <div class="songInfo"></div>
+              <div class="songButtons">
+                <img
+                  id="previous"
+                  src="assets/previous.svg"
+                  alt="previoussong"
+                />
+                <img id="play" src="assets/play.svg" alt="playpause" />
+                <img id="next" src="assets/next.svg" alt="nextsong" />
+              </div>
+              <div class="songTime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

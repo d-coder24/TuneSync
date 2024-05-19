@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial,
+    "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Define scrollbar colors */
+:root {
+  --scrollbar-track-color: #333; /* Color of the track */
+  --scrollbar-thumb-color: #666; /* Color of the thumb */
+}
+
+/* Define scrollbar colors */
+:root {
+  --scrollbar-track-color: #333; /* Color of the track */
+  --scrollbar-thumb-color: #666; /* Color of the thumb */
+  --scrollbar-thumb-hover-color: #d34646; /* Color of the thumb on hover */
+}
+
+/* Define scrollbar colors */
+:root {
+  --scrollbar-thumb-color: #666; /* Color of the thumb */
+  --scrollbar-track-color: #333; /* Color of the track */
+  --scrollbar-thumb-hover-color: #888; /* Color of the thumb on hover */
+}
+
+/* Apply scrollbar styles */
+body {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color); /* For Firefox */
+
+  /* For WebKit-based browsers */
+  &::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color); /* Color of the track */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #333, #666); /* Gradient background */
+    border-radius: 10px; /* Roundness of the thumb */
+    border: 3px solid var(--scrollbar-track-color); /* Border around the thumb */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      45deg,
+      #666,
+      #888
+    ); /* Gradient background on hover */
+  }
+}
+
+.left {
+  width: 24vw;
+  padding: 5px;
+}
+
+.right {
+  width: 75vw;
+  position: relative;
+}
+
+.home ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 25px;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.heading {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 13px;
+  align-items: center;
+  /* padding-bottom: 20px; */
+}
+
+.heading img {
+  width: 25px;
+}
+
+.add-logo {
+  position: absolute;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.library {
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  gap: 23px;
+  position: absolute;
+  bottom: -1px;
+  padding: 15px 0;
+}
+.footer a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  border-radius: 10px;
+  height: 75px;
+}
+
+.nav svg {
+  cursor: pointer;
+}
+.header > * {
+  padding: 20px;
+}
+
+.right {
+  margin: 10px 0;
+}
+
+.tunesyncPlaylists {
+  padding: 0 20px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 15px;
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+.card {
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1d1c1c;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.card:hover {
+  background-color: #292929;
+  cursor: pointer;
+}
+
+.card p {
+  color: #b3b3b3;
+}
+.card h3,
+p {
+  padding-top: 5px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.play {
+  width: 50px;
+  height: 50px;
+  background-color: #1fdf64;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 310px;
+  left: 150px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover > .play {
+  opacity: 1;
+  top: 230px;
+  cursor: pointer;
+}
+
+.play:hover {
+  width: 52px;
+  height: 52px;
+}
+
+.signupBtn {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  background-color: #101010;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.buttons > * {
+  margin: 0 12px;
+}
+
+.signupBtn:hover {
+  color: white;
+  font-size: 17px;
+}
+
+.loginBtn {
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 98px;
+}
+
+.loginBtn:hover {
+  font-size: 17px;
+}
+.playbar {
+  position: fixed;
+  background-color: #1d1c1c;
+  width: 71%;
+  bottom: 1px;
+  padding: 39px;
+  border-radius: 15px;
+  margin: 35px 12px;
+}
+
+.songButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* bottom: 110px;
+  left: 785px;
+  position: sticky; */
+}
+.songList {
+  overflow-y: scroll;
+  height: 52vh;
+  margin-bottom: 32px;
+}
+.songList ul {
+  padding: 0 2px;
+}
+.songList ul div {
+  padding: 1px 0;
+}
+.songList ul li {
+  list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+  cursor: pointer;
+  padding: 12px 0;
+  margin: 20px 0;
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 12.5px;
+}
+
+.songList .info {
+  width: 100%;
+}
+.playnow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playnow span {
+  font-size: 16px;
+  width: 80px;
+}
+
+.seekbar{
+  height: 2px;
+  width: 92%;
+background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  margin: 5px;
+} 
+
+.circle{
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color: white ;
+  position: relative;
+  bottom: 6px;
+  transition: left 0.5s;
+  cursor: pointer;
+}
+
+.songButtons img{
+  cursor: pointer;
+}
+
+.songBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.songInfo, .songTime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  max-width: 180px;
+}
