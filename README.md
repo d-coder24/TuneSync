@@ -2,7 +2,7 @@
 
 Welcome to **TuneSync**, a sleek and user-friendly Spotify Clone Web App! Crafted with HTML, CSS, and JavaScript, TuneSync offers a dynamic and immersive music listening experience. 🎵
 
-![TuneSync Screenshot](assets/TUNESYNC.jpg)
+<img src="assets/TUNESYNC.jpg" alt="TuneSync Screenshot" width="350">
 
 ## ✨ Features
 
