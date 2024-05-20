@@ -2,7 +2,7 @@
 
 Welcome to **TuneSync**, a sleek and user-friendly Spotify Clone Web App! Crafted with HTML, CSS, and JavaScript, TuneSync offers a dynamic and immersive music listening experience. 🎵
 
-![TuneSync Screenshot](path-to-screenshot.png)
+![TuneSync Screenshot](assets/TUNESYNC.jpg)
 
 ## ✨ Features
 
@@ -22,12 +22,12 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/tunesync.git
+    git clone https://github.com/d-coder24/TuneSync.git
     ```
 
 2. **Navigate to the project directory:**
     ```sh
-    cd tunesync
+    cd TuneSync
     ```
 
 3. **Open `index.html` in your web browser:**
@@ -51,9 +51,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - your_email@example.com
+Darshan - [@darshan.coder](https://instagram.com/darshan.coder) - darshan.career24gmail.com
 
-Project Link: [https://github.com/d-coder24/Tunesync](https://github.com/d-coder24/Tunesync)
+Project Link: [https://github.com/d-coder24/TuneSync](https://github.com/d-coder24/TuneSync)
 
 ## 💬 Acknowledgements
 
